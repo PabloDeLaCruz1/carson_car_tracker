@@ -1,4 +1,4 @@
 require "CSV"
-CSV.foreach("./CAR_DATA.csv") do |row|
+CSV.foreach("./CAR_DATA.csv") do |row, i|
   p row
 end

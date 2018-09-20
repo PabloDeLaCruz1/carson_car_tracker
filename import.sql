@@ -14,5 +14,9 @@ CREATE TABLE customers (
     sale_markup integer,
     customer_id integer references customers(id),
     date_created timestamp DEFAULT current_timestamp
+);CREATE TABLE transactions (
+  id SERIAL PRIMARY KEY,
+  customer_id integer references customers(id),
+  car_id integer references cars(id)
 );
 
